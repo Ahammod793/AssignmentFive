@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Donate Bangladesh</title>
+    <style>
+    .lexend {
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }</style>
+</head>
+<body class="lexend mx-auto bg-[#fff]">
+    <header class="sticky top-0 z-50 backdrop-blur-lg BlurWhenScroll font-semibold leading-6 text-[20px]" >
+        <div class="naveScroll navbar bg-[#F9F7F3] text-[#111111] px-36 py-7">
+            <div class="navbar-start"><button class="btn btn-active bg-Custom-color-dark hover:bg-Custom-color text-xl">Blog</button></div>
+            <div class="navbar-center gap-3">
+                <img src="assets/logo.png" alt="LOGO">
+                <h2>Donate Bangladesh</h2>
+            </div>
+            <div class="navbar-end gap-3">
+                <img src="assets/coin.png" alt="">
+              <h2>5500 BDT</h2>
+            </div>
+        </div>
+        <div class="flex justify-center gap-6 mt-8 pb-6 text-xl">
+            <button class="btn  btn-active w-28" id="donatBG">Donation</button>
+            <button class="btn btn-active w-28" id="historyBG">History</button>
+        </div>
+    </header>
+    <div class="divider"></div>
+    
+
+    <script src="/javaScript/home.js"></script>
+    <script src="/javaScript/tailwind.config.js"></script>
+    <script src="/javaScript/utilities.js"></script>
+    <script src="javaScript/scroll.js"></script>
+    
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'Custom-color-dark': '#94c539',
+                'Custom-color' : '#B4F461',
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
