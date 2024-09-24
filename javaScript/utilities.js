@@ -56,9 +56,12 @@ function sectionCalled(idButton,idInput,idTotal,donateFor){
             popUpWindow.classList.remove('hidden');
             popUpWindow.classList.add('flex');
 
+
             const confirmation= document.getElementById('closeConfirmation');
             confirmation.addEventListener('click', function(){
+                document.getElementById(idInput).value='';
                 popUpWindow.classList.add('hidden');
+                
 
                 const Gethistory = document.getElementById('histories');
                 const historyInnerDiv = document.createElement('div');
@@ -77,7 +80,10 @@ function sectionCalled(idButton,idInput,idTotal,donateFor){
                 paragraph.innerText = `Date : ${donateTime}`;
                 historyInnerDiv.appendChild(paragraph);
 
-                
+                // Sir, when I donat one time, only one message is add to history container but when I donat second time, then two message is added one of new and other old, then when I donat third time, then four new message is added three are  old and one is new donat history. And it being continuously updated. 
+
+                // Please help help me !
+
             });
             
         }
