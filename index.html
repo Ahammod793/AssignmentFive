@@ -20,29 +20,159 @@
 </head>
 <body class="lexend mx-auto bg-[#fff]">
     <header class="sticky top-0 z-50 backdrop-blur-lg BlurWhenScroll font-semibold leading-6 text-[20px]" >
-        <div class="naveScroll navbar bg-[#F9F7F3] text-[#111111] px-36 py-7">
-            <div class="navbar-start"><button class="btn btn-active bg-Custom-color-dark hover:bg-Custom-color text-xl">Blog</button></div>
+        <div class="naveScroll navbar bg-[#F9F7F3] text-[#111111] px-10 sm:px-36 py-3 sm:py-7">
+            <div class="navbar-start"><button class="btn btn-active bg-Custom-color-dark hover:bg-Custom-color text-xl" onclick="goBlog()">Blog</button></div>
             <div class="navbar-center gap-3">
                 <img src="assets/logo.png" alt="LOGO">
-                <h2>Donate Bangladesh</h2>
+                <h2 class="hidden sm:flex">Donate Bangladesh</h2>
             </div>
             <div class="navbar-end gap-3">
                 <img src="assets/coin.png" alt="">
-              <h2>5500 BDT</h2>
+              <h2><span id="MyBallence">20000</span> BDT</h2>
             </div>
         </div>
-        <div class="flex justify-center gap-6 mt-8 pb-6 text-xl">
-            <button class="btn  btn-active w-28" id="donatBG">Donation</button>
-            <button class="btn btn-active w-28" id="historyBG">History</button>
+        <div class="flex justify-center gap-6 mt-3 pb-2 sm:mt-8 sm:pb-6 text-xl">
+            <button class="btn  btn-active sm:btn-lg  w-28" id="donatBG">Donation</button>
+            <button class="btn btn-active sm:btn-lg  w-28" id="historyBG">History</button>
         </div>
     </header>
     <div class="divider"></div>
-    
+    <main class="px-10 sm:px-36">
+        <div class="my-20" id="DonationBody">
+            
+            <!-- first section start -->
+            <div class="flex flex-col sm:flex-row p-8 gap-12 rounded-2xl border border-[#111]/10">
+                
+                <img src="assets/noakhali.png" alt="Noakhali-Flood"
+                    class="sm:max-w-sm rounded-lg shadow-2xl" />
 
+                <div class="flex flex-col">
+                    <div class="inline-flex sm:px-4 sm:py-2 px-2 py-1 gap-2 rounded-lg bg-[#111]/5 w-44">
+                        <img src="assets/coin.png" alt="coin" class="h-6 w-6"> 
+                        <p>
+                            <span id="totalDonation1">440</span> BDT
+                        </p>
+                    </div>
+                    
+                    <h1 class="my-4 font-bold text-xl" id="noakhali">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="font-light text-sm leading-6"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input class="my-6 p-3 sm:p-5 text-[#111]/40 rounded-2xl border border-[#111]/10" type="number" name="" id="donatAmountFirst" placeholder="Write Donation Amount">
+                    <button  id="button-donat1" class="btn btn-active bg-Custom-color-dark hover:bg-Custom-color  sm:btn-lg
+                    self-center">Donat Now</button>
+                </div>
+            </div>
+            <!-- first section end of noakhali flood -->
+            <!-- second section start -->
+            <div class="flex flex-col sm:flex-row p-8 gap-12 rounded-2xl border border-[#111]/10 my-9">
+            
+                <img src="assets/feni.png" alt="Feni-Flood"
+                    class="sm:max-w-sm rounded-lg shadow-2xl" />
+
+                <div class="flex flex-col">
+                    <div class="inline-flex sm:px-4 sm:py-2 px-2 py-1 gap-2 rounded-lg bg-[#111]/5 w-44">
+                        <img src="assets/coin.png" alt="coin" class="h-6 w-6"> 
+                        <p>
+                            <span id="totalDonation2">600</span> BDT
+                        </p>
+                    </div>
+                
+                    <h1 class="my-4 font-bold text-xl" id="feni">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="font-light text-sm leading-6"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                    <input class="my-6 p-3 sm:p-5 text-[#111]/40 rounded-2xl border border-[#111]/10" type="number" name="" id="donatAmountSecond" placeholder="Write Donation Amount">
+                    <button id="button-donat2" class="btn btn-active bg-Custom-color-dark hover:bg-Custom-color  sm:btn-lg self-center">Donat Now</button>
+                </div>
+            </div>
+            <!-- second section end -->
+            
+            <!-- third section start -->
+            <div class="flex flex-col sm:flex-row p-8 gap-12 rounded-2xl border border-[#111]/10">
+            
+                <img src="assets/quota-protest.png" alt="quota-protest"
+                    class="sm:max-w-sm rounded-lg shadow-2xl" />
+
+                <div class="flex flex-col">
+                    <div class="inline-flex sm:px-4 sm:py-2 px-2 py-1 gap-2 rounded-lg bg-[#111]/5 w-44">
+                        <img src="assets/coin.png" alt="coin" class="h-6 w-6"> 
+                        <p>
+                            <span id="totalDonation3">2400</span> BDT
+                        </p>
+                    </div>
+                    
+                    <h1 class="my-4 font-bold text-xl" id="quota">Aid for Injured in the Quota Movement</h1>
+                    <p class="font-light text-sm leading-6"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                    <input class="my-6 p-3 sm:p-5 text-[#111]/40 rounded-2xl border border-[#111]/10" type="number" name="" id="donatAmountThird" placeholder="Write Donation Amount">
+                    <button id="button-donat3" class="btn btn-active bg-Custom-color-dark hover:bg-Custom-color  sm:btn-lg self-center">Donat Now</button>
+                </div>
+            </div>
+            <!-- third section end -->
+            <!-- fourth sectin start -->
+            <div class="flex flex-col sm:flex-row p-8 gap-12 rounded-2xl border border-[#111]/10 my-9">
+            
+                <img src="assets/rohinga-camp.jpg" alt="Rahinga Camp"
+                    class="sm:max-w-sm rounded-lg shadow-2xl" />
+
+                <div class="flex flex-col">
+                    <div class="inline-flex sm:px-4 sm:py-2 px-2 py-1 gap-2 rounded-lg bg-[#111]/5 w-44">
+                        <img src="assets/coin.png" alt="coin" class="h-6 w-6"> 
+                        <p>
+                            <span id="totalDonation4">1000</span> BDT
+                        </p>
+                    </div>
+                    
+                    <h1 class="my-4 font-bold text-xl" id="rahinga">Donate to provide food and shelter for the Rohingya</h1>
+                    <p class="font-light text-sm leading-6">The major health problems prevailing among Rohingya refugees are unexplained fever, acute respiratory infections, and diarrhea. Rohingya camps also experienced a sudden outbreak of diphtheria in November 2017 and a measles outbreak in December 2017-April 2018. Mental health problems like post-traumatic stress disorder (PTSD), depression, and suicidal thoughts were also prevalent in the Rohingya community. More than half of the Rohingya refugees are women, and many of them do not have access to quality antenatal care while pregnant.</p>
+                    <input class="my-6 p-3 sm:p-5 text-[#111]/40 rounded-2xl border border-[#111]/10" type="number" name="" id="donatAmountFourth" placeholder="Write Donation Amount">
+                    <button id="button-donat4" class="btn btn-active bg-Custom-color-dark hover:bg-Custom-color  sm:btn-lg self-center">Donat Now</button>
+                </div>
+            </div>
+            <!-- fourth section end -->
+            <!-- 
+            fifth section start -->
+            <div class="flex flex-col sm:flex-row p-8 gap-12 rounded-2xl border border-[#111]/10">
+            
+                <img src="assets/dangue.jpg" alt="Rahinga Camp"
+                    class="sm:max-w-sm rounded-lg shadow-2xl" />
+
+                <div class="flex flex-col">
+                    <div class="inline-flex sm:px-4 sm:py-2 px-2 py-1 gap-2 rounded-lg bg-[#111]/5 w-44">
+                        <img src="assets/coin.png" alt="coin" class="h-6 w-6"> 
+                        <p>
+                            <span id="totalDonation5">3000</span> BDT
+                        </p>
+                    </div>
+                    
+                    <h1 class="my-4 font-bold text-xl" id="dengue">Donate to help treat dengue</h1>
+                    <p class="font-light text-sm leading-6">Between 1 January and 20 November 2022, a total of 52 807 dengue cases including 230 related deaths (case fatality rate = 0.44%) were reported by the Ministry of Health & Family Welfare (MOHFW) (Figure 1). The cases were confirmed either by non-structural protein (NS1) diagnostic kits or by Immunoglobulin M (IgM) tests. According to information available for 40% of reported cases (n=20 982) the median age is 25 years (range: 0 – 89) with males accounting for 60% of the cases.</p>
+                    <input class="my-6 p-3 sm:p-5 text-[#111]/40 rounded-2xl border border-[#111]/10" type="number" name="" id="donatAmountFifth" placeholder="Write Donation Amount">
+                    <button id="button-donat5" class="btn btn-active bg-Custom-color-dark hover:bg-Custom-color  sm:btn-lg self-center">Donat Now</button>
+                </div>
+            </div>
+            <!-- fifth section end -->
+        </div>
+        <div class="HistoryBody min-h-screen" id="historyContainer">
+            <div id="histories" class="flex flex-col gap-6">
+            </div>
+        </div>
+        <div class="top-1/3 left-1/3 z-10 p-9 overflow-auto fixed rounded-3xl  border bg-white border-red-100
+           hidden flex-col text-center items-center justify-center animation" id="mockup-window">
+                <h1 class="font-extrabold text-3xl text-black">Congrates!</h1>
+                <img src="assets/coin.png" alt="Coin" class="my-3">
+                <p class="font-light text-xl">You Have Donated For Humankind</p>
+                <h3 class="font-semibold text-2xl my-3">Successfully</h3>
+                <button class="btn btn-md text-xl py-2 px-2" id="closeConfirmation">close confirmaiton</button>
+        </div>
+
+    </main>
+    <footer class="bg-[#edac29] min-h-16 "> 
+    </footer>
+    
+    <script src="javaScript/donation.js"></script>
     <script src="/javaScript/home.js"></script>
     <script src="/javaScript/tailwind.config.js"></script>
     <script src="/javaScript/utilities.js"></script>
     <script src="javaScript/scroll.js"></script>
+    <!-- <script src="javaScript/calculation.js"></script> -->
+    <!-- <script src="javaScript/history.js"></script> -->
     
     <script>
         tailwind.config = {

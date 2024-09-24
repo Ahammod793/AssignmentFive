@@ -6,8 +6,8 @@ window.addEventListener('scroll', function(){
         nave.classList.add('backdrop-blur-sm', 'bg-opacity-70');
     }
     else{
-        header.classList.remove('backdrop-blur-sm', 'bg-opacity-85');
-        nave.classList.remove('backdrop-blur-sm', 'bg-opacity-85');
+        header.classList.remove('backdrop-blur-sm', 'bg-opacity-70');
+        nave.classList.remove('backdrop-blur-sm', 'bg-opacity-70');
     }
 });
 

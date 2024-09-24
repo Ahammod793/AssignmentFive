@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8373c287c4.js" crossorigin="anonymous"></script>
+    <title>Donate Bangladesh : Home</title>
+    <style>
+    .lexend {
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+      @-webkit-keyframes animation{
+        0% { transform: rotateZ(0deg);}
+        10%{ transform: rotateZ(17deg);}
+        25%{ transform: rotateZ(-9deg);}
+        40%{ transform: rotateZ(21deg);}
+        45%{ transform: rotateZ(29deg);}
+        60%{ transform: rotateZ(-16deg);}
+        85%{ transform: rotateZ(20deg);}
+        90%{ transform: rotateZ(8deg);}
+        100%{ transform:rotateZ(0%);}
+      }
+      .animation{
+        -webkit-animation: animation 2s infinite; 
+      }
+      </style>
+</head>
+<body class="lexend mx-auto bg-[#fff]">
+    <header class="sticky top-0 z-50 backdrop-blur-lg BlurWhenScroll font-semibold leading-6 text-[20px]" >
+        <div class="naveScroll navbar bg-[#F9F7F3] text-[#111111] px-10 sm:px-36 py-7">
+            <div class="navbar-start"><button class="btn btn-active  sm:btn-lg bg-Custom-color-dark hover:bg-Custom-color text-xl" onclick="goHome()">Home</button></div>
+            <div class="navbar-center gap-3">
+                <img src="assets/logo.png" alt="LOGO">
+                <h2 class="hidden sm:flex">Donate Bangladesh</h2>
+            </div>
+            <div class="navbar-end gap-3">
+                <img src="assets/coin.png" alt="Coin">
+                <h2>
+                  <span id="MyBallence">20000</span> BDT
+                </h2>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="px-10 sm:px-36">
+            <h1 class="font-bold text-4xl inline-flex py-8">Important FAQ <span class="animation text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="h-8 w-8">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - 
+                    https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M80 160c0-35.3 28.7-64 64-64l32 0c35.3 0 64 28.7 64 64l0 3.6c0 
+                21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74l0 1.4c0 
+                17.7 14.3 32 32 32s32-14.3 32-32l0-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 
+                58.8-64.1 58.8-107.7l0-3.6c0-70.7-57.3-128-128-128l-32 
+                0C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 
+                0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>
+                </span>
+            </h1>
+            <div class="join join-vertical w-full ">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">What do you mean by Document Object Model (DOM)?</div>
+                  <div class="collapse-content">
+                    <p class="font-normal text-base leading-6">DOM is a interface for web document. We can represent DOM as a tree where HTML tag, contents are its object. Programmer can manipulate its model.  In dom, the html file may think as document, its tag and content is object and we model means the web ui.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                  <div class="collapse-content">
+                    <p class="font-normal text-base leading-6">There are a several way to select any element from DOM. One is by using element ID. Id name always be unique and it won't use for one More element sellection. One other is class name of elemet. We can select an element in javaScript by using getElementsByClassName() function. Also quarrySelect() and quearrySellecAll() mathod is use for sececting an element. </p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">What is event delegation in the context of DOM, and why it is useful?</div>
+                  <div class="collapse-content">
+                    <p class="font-normal text-base leading-6">Event delegation is a teqnic in js language where a programmer can use only one event listener for a parent element, and controll every child element by using the event listener. For example, we can consider a container as parent elememt. The container can takes more element. Now we can We work first using event delegation, it use less memory space and can hundle more child element </p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                      <p class="font-normal text-base leading-6">A programmer can easily manipulate an elememt's attributes and style by using javaScript Dom. the setAttribute() sets any attribute within an elememt. it takes two parameter. removeAttribute() mathod removes any attribute from a tag or elememt. The getAttributes() mathod used to collect any attribute. We can change any elememt's style in directly. Example : element.style.propertyName = 'value'. As propertyName I, developer can use "backgroundColor,fontSize,padding and more property". To add new classes within an elememt or remove any class, developer can use classList() attribute. </p>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </main>
+    
+
+
+    <script src="javaScript/home.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'Custom-color-dark': '#94c539',
+                'Custom-color' : '#B4F461',
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
